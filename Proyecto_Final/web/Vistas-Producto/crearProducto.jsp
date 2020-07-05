@@ -82,7 +82,7 @@
         <div class="estilo_consulta">     
        
         <div class="col-lg-10">
-         <div class="card shadow-lg border-0 rounded-lg  bg-info">
+         <div class="card shadow-lg border-0 rounded-lg  bg-success">
           <div class="card-header"><h3 class="text-center font-weight-light my-4 "><b>Registrar Producto</b></h3></div>
           <div class="card-body">
         <form class="form-horizontal" name="frmProductos" action="<%= request.getContextPath() %>/productos" method="post">
@@ -170,17 +170,17 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <%
-                        if(request.getParameter("senal")!=null){
+                  if(request.getParameter("senal")!=null){
                     %>
-                    <input type="submit" class="btn btn-default btn-sm" name="btnModificar" value="Actualizar" />
+                    <input type="submit" class="btn btn-warning bt-md" name="btnModificar" value="Actualizar" />
                     <%
                         }else{   
                     %>    
-                    <input type="submit" class="btn btn-success btn-sm" name="btnGuardar" value="Guardar" />
+                    <input type="submit" class="btn btn-info bt-md" name="btnGuardar" value="Guardar" />
                     <%
                         }  
                     %> 
-                    <input type="button" class="btn btn-info btn-sm" onclick="regresar('<%= request.getContextPath() %>/productos?opcion=listar')" 
+                    <input type="button" class="btn btn-dark btn-md" onclick="regresar('<%= request.getContextPath() %>/productos?opcion=listar')" 
                            name="btnRegresar" value="Regresar" />
                 </div>
             </div>   

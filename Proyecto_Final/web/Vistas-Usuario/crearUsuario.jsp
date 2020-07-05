@@ -76,6 +76,10 @@
         
         <div class="estilo_consulta">     
         <h3>Mantenimiento Usuario</h3>
+        <div class="col-lg-10">
+         <div class="card shadow-lg border-0 rounded-lg  bg-success">
+          <div class="card-header"><h3 class="text-center font-weight-light my-4 "><b>Registrar Usuario</b></h3></div>
+          <div class="card-body">
         <form class="form-horizontal" name="frmUsuarios" action="<%= request.getContextPath() %>/usuarios" method="post">
             <input type="hidden" name="txtId" value="<%= id_usu %>" >
             
@@ -155,22 +159,26 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <%
-                        if(request.getParameter("senal")!=null){
+                    if(request.getParameter("senal")!=null){
                     %>
-                    <input type="submit" class="btn btn-warning btn-sm" name="btnModificar" value="Actualizar" />
+                    <input type="submit" class="btn btn-warning bt-md" name="btnModificar" value="Actualizar" />
                     <%
                         }else{   
                     %>    
-                    <input type="submit" class="btn btn-success btn-sm" name="btnGuardar" value="Guardar" />
+                    <input type="submit" class="btn btn-info bt-md" name="btnGuardar" value="Guardar" />
                     <%
                         }  
                     %> 
-                    <input type="button" class="btn btn-info btn-sm" onclick="regresar('<%= request.getContextPath() %>/usuarios?opcion=listar')" 
+                    <input type="button" class="btn btn-dark btn-md" onclick="regresar('<%= request.getContextPath() %>/usuarios?opcion=listar')" 
                            name="btnRegresar" value="Regresar" />
                 </div>
             </div>   
         </form>
       </div>
+                           </div>
+                                    
+                                </div>
+                            </div>
     </div>
 </main>
         

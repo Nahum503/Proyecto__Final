@@ -56,7 +56,7 @@
         <h3 class="text-center font-weight-bold">Mantenimiento Categorias</h3>
         <div class="row justify-content-center">
                             <div class="col-lg-7">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5 bg-info">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5 bg-success">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4 "><b>Registrar Categoria</b></h3></div>
                                     <div class="card-body">
                                         <form class="form-horizontal" id="frmCategoria" name="frmCategoria" action="<%= request.getContextPath() %>/categorias" method="post">
@@ -74,16 +74,16 @@
                                             <%
                         if(request.getParameter("senal")!=null){
                     %>
-                    <input type="submit" class="btn btn-success btn-lg" name="btnModificar" value="Actualizar" />
+                    <input type="submit" class="btn btn-warning bt-md" name="btnModificar" value="Actualizar" />
                     <%
                         }else{   
                     %>    
-                    <input type="submit" class="btn btn-success btn-lg" name="btnGuardar" value="Guardar" />
+                    <input type="submit" class="btn btn-info bt-md" name="btnGuardar" value="Guardar" />
                     <%
                         }  
                     %> 
                     
-                    <input type="button" class="btn btn-warning btn-lg" onclick="regresar('<%= request.getContextPath() %>/categorias?opcion=listar')" 
+                    <input type="button" class="btn btn-dark btn-md" onclick="regresar('<%= request.getContextPath() %>/categorias?opcion=listar')" 
                            name="btnRegresar" value="Regresar" />
                                         </form>
                                     </div>
